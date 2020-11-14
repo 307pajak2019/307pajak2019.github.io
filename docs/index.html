@@ -133,7 +133,7 @@
                             <h2>UAS KIT</h2>
                             <h4>Link Upload LJU</h4>
                             
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdoz0LHcAIVJDq1jszG7gXr1HihIa0OzJCX6tsgg0N39-kJmw/viewform" target="_blank" class="btn_1 full">UPLOAD LJU</a><br><br>
+                            <a id="linkLJU" href="https://docs.google.com/forms/d/e/1FAIpQLSdoz0LHcAIVJDq1jszG7gXr1HihIa0OzJCX6tsgg0N39-kJmw/viewform" target="_blank" class="btn_1 full">UPLOAD LJU</a><br><br>
                             <h4>Link Soal</h4>
                             <a href="https://drive.google.com/drive/u/0/folders/1fpFeqXT3gX_AnfIcNF6YdIjRDon-gCYO" target="_blank" class="btn_1 full">Link 1</a><br><br>
                             <a href="https://drive.google.com/drive/u/0/folders/1MdRVtBeqtqphu8nJ_2Tdl2bezL71YhWD" target="_blank" class="btn_1 full">Link 2</a><br><br>
@@ -274,6 +274,16 @@ function awal() {
 if(sessionStorage.getItem("nama") != null){
 document.getElementsByTagName("a")[4].setAttribute("href", "https://bit.ly/rpsganjil2021"); 
 }
+var tgl = new Date()
+var link = "https://docs.google.com/forms/d/e/1FAIpQLSdoz0LHcAIVJDq1jszG7gXr1HihIa0OzJCX6tsgg0N39-kJmw/viewform?entry.377883442="
+var matkul
+switch (tgl.getDate()){
+	case 16:
+		matkul = "Keuangan%20Publik";
+	case 14:
+		matkul = "Uji%20Coba"
+}
+document.getElementById("linkLJU").setAttribute("href", link+matkul); 
 }
 function tolak() {
 var myModal = new bootstrap.Modal(document.getElementById("perlulogin"), {});
