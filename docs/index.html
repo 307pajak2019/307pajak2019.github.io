@@ -279,9 +279,23 @@ var link = "https://docs.google.com/forms/d/e/1FAIpQLSdoz0LHcAIVJDq1jszG7gXr1Hih
 var matkul
 switch (tgl.getDate()){
 	case 16:
-		matkul = "Keuangan%20Publik";
-	case 14:
-		matkul = "Uji%20Coba"
+		matkul = "Keuangan Publik";
+	case 17:
+		matkul = "Akuntansi Keuangan Menengah I";
+	case 18:
+		matkul = "Ketentuan Umum Perpajakan";
+	case 19:
+		matkul = "Pajak Bumi dan Bangunan";
+	case 20:
+		matkul = "Akuntansi Biaya";
+	case 23:
+		matkul = "Pengantar Hukum Pajak";
+	case 24:
+		matkul = "Pajak Penghasilan";
+	case 25:
+		matkul = "Pajak Pertambahan Nilai";
+	default:
+		matkul = "Tidak Ada Ujian"
 }
 document.getElementById("linkLJU").setAttribute("href", link+matkul); 
 }
