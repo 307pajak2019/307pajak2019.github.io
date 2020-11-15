@@ -139,6 +139,8 @@
                             <a href="https://drive.google.com/drive/u/0/folders/1MdRVtBeqtqphu8nJ_2Tdl2bezL71YhWD" target="_blank" class="btn_1 full">Link 2</a><br><br>
                             <a href="https://drive.google.com/drive/u/0/folders/1e8BfIwSQ-R7ECpscj29ugZxKOcMeqICQ" target="_blank" class="btn_1 full">Link 3</a><br><br>
                             <a href="https://drive.google.com/drive/u/0/folders/1Nua7xP8X1B1pgn2QbNjMH2XUwuK7iwev" target="_blank" class="btn_1 full">Link 4</a><br><br>
+			    <h4>Berita Acara</h4>
+                            <a id="beritaacara" href="https://docs.google.com/forms/d/e/1FAIpQLSfCsdmipIQb_Z24N02bSKg-6H-KTlSUigxi6OnLcVAmdOBi8g/viewform?entry.1215549560=D-III+Pajak&entry.1749636149=III&entry.2130774851=07&entry.541064217=29&entry.1477371253=02" target="_blank" class="btn_1 full">Berita Acara Ujian</a><br><br>
                         </div>
                     </div>
                 </div>
@@ -276,28 +278,39 @@ document.getElementsByTagName("a")[4].setAttribute("href", "https://bit.ly/rpsga
 }
 var tgl = new Date()
 var link = "https://docs.google.com/forms/d/e/1FAIpQLSdoz0LHcAIVJDq1jszG7gXr1HihIa0OzJCX6tsgg0N39-kJmw/viewform?entry.377883442="
+var linkBA = "https://docs.google.com/forms/d/e/1FAIpQLSfCsdmipIQb_Z24N02bSKg-6H-KTlSUigxi6OnLcVAmdOBi8g/viewform?entry.1215549560=D-III+Pajak&entry.1749636149=III&entry.2130774851=07&entry.541064217=29&entry.1477371253="
 var matkul
+var sesi
 switch (tgl.getDate()){
 	case 16:
 		matkul = "Keuangan Publik";
+		sesi = "02"
 	case 17:
 		matkul = "Akuntansi Keuangan Menengah I";
+		sesi = "04"
 	case 18:
 		matkul = "Ketentuan Umum Perpajakan";
+		sesi = "06"
 	case 19:
 		matkul = "Pajak Bumi dan Bangunan";
+		sesi = "08"
 	case 20:
 		matkul = "Akuntansi Biaya";
+		sesi = "10"
 	case 23:
 		matkul = "Pengantar Hukum Pajak";
+		sesi = "12"
 	case 24:
 		matkul = "Pajak Penghasilan";
+		sesi = "14"
 	case 25:
 		matkul = "Pajak Pertambahan Nilai";
+		sesi = "16"
 	default:
 		matkul = "Tidak Ada Ujian"
 }
 document.getElementById("linkLJU").setAttribute("href", link+matkul); 
+document.getElementById("beritaacara").setAttribute("href", linkBA+sesi); 
 }
 function tolak() {
 var myModal = new bootstrap.Modal(document.getElementById("perlulogin"), {});
