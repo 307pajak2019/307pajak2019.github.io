@@ -5445,7 +5445,23 @@ h1, h2, h3, h4, h5, h6 {
   padding: 15px 0px 30px 0px;
   min-width: 800px;
 }
-
+/* line 361, E:/172 Etrain Education/172_Etrain_Education_html/sass/_elements.scss */
+.progress-table .absen {
+  width: 11.83%;
+  padding-left: 30px;
+}
+.progress-table .nama {
+  width: 25%;
+}
+.progress-table .jam {
+  width: 8%;
+}
+.progress-table .status {
+  width: 10%;
+}
+.progress-table .tombol {
+  width: 15%;
+}
 /* line 361, E:/172 Etrain Education/172_Etrain_Education_html/sass/_elements.scss */
 .progress-table .serial {
   width: 11.83%;
@@ -5474,6 +5490,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 377, E:/172 Etrain Education/172_Etrain_Education_html/sass/_elements.scss */
+.progress-table .table-head .absen,
+.progress-table .table-head .nama,
+.progress-table .table-head .jam,
+.progress-table .table-head .status,
 .progress-table .table-head .serial,
 .progress-table .table-head .country,
 .progress-table .table-head .visit,
@@ -5486,12 +5506,16 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 387, E:/172 Etrain Education/172_Etrain_Education_html/sass/_elements.scss */
 .progress-table .table-row {
-  padding: 15px 0;
+  padding: 5px 0;
   border-top: 1px solid #edf3fd;
   display: flex;
 }
 
 /* line 391, E:/172 Etrain Education/172_Etrain_Education_html/sass/_elements.scss */
+.progress-table .table-row .absen,
+.progress-table .table-row .nama,
+.progress-table .table-row .jam,
+.progress-table .table-row .status,
 .progress-table .table-row .serial,
 .progress-table .table-row .country,
 .progress-table .table-row .visit,
