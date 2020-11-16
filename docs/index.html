@@ -283,6 +283,7 @@ var link = "https://docs.google.com/forms/d/e/1FAIpQLSdoz0LHcAIVJDq1jszG7gXr1Hih
 var linkBA = "https://docs.google.com/forms/d/e/1FAIpQLSfCsdmipIQb_Z24N02bSKg-6H-KTlSUigxi6OnLcVAmdOBi8g/viewform?entry.1215549560=D-III+Pajak&entry.1749636149=III&entry.2130774851=07&entry.541064217=29&entry.1477371253="
 var matkul = ""
 var sesi
+console.log(tgl.getDate())
 switch (tgl.getDate()){
 	case 16:
 		matkul = "Keuangan Publik";
@@ -308,6 +309,9 @@ switch (tgl.getDate()){
 	case 25:
 		matkul = "Pajak Pertambahan Nilai";
 		sesi = "16"
+	default:
+		matkul = ""
+		sesi = ""
 }
 document.getElementById("linkLJU").setAttribute("href", link+matkul); 
 document.getElementById("beritaacara").setAttribute("href", linkBA+sesi); 
