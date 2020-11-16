@@ -281,7 +281,7 @@ document.getElementsByTagName("a")[4].setAttribute("href", "https://bit.ly/rpsga
 var tgl = new Date()
 var link = "https://docs.google.com/forms/d/e/1FAIpQLSdoz0LHcAIVJDq1jszG7gXr1HihIa0OzJCX6tsgg0N39-kJmw/viewform?entry.377883442="
 var linkBA = "https://docs.google.com/forms/d/e/1FAIpQLSfCsdmipIQb_Z24N02bSKg-6H-KTlSUigxi6OnLcVAmdOBi8g/viewform?entry.1215549560=D-III+Pajak&entry.1749636149=III&entry.2130774851=07&entry.541064217=29&entry.1477371253="
-var matkul
+var matkul = ""
 var sesi
 switch (tgl.getDate()){
 	case 16:
@@ -308,8 +308,6 @@ switch (tgl.getDate()){
 	case 25:
 		matkul = "Pajak Pertambahan Nilai";
 		sesi = "16"
-	default:
-		matkul = "Tidak Ada Ujian"
 }
 document.getElementById("linkLJU").setAttribute("href", link+matkul); 
 document.getElementById("beritaacara").setAttribute("href", linkBA+sesi); 
